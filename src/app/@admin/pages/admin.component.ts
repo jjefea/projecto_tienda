@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
+  toggledValue = true;
+  toggled($event){
+    console.log('admin',$event);
+    this.toggledValue = $event;
+  }
 
   constructor() { }
 
